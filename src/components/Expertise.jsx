@@ -7,12 +7,12 @@ const Expertise = () => {
             <h2 className=" my-8 text-center text-3xl tracking-tighter lg:text-4xl ">
                 Expertise
             </h2>
-            <div className="container mx-auto px-4 ">
+            <div className="container mx-auto  px-4 ">
                 {CUSINES.map((cuisine, index) => {
                     return (
                         <div
                             key={index}
-                            className="flex items-center border-b-4 border-dotted border-neutral-700/40 py-2"
+                            className="flex  lg:mx-5 items-center border-b-4 border-dotted border-neutral-700/40 py-2"
                         >
                             <div className="flex-shrink-0 pr-8 text-2xl">
                                 {cuisine.number}
