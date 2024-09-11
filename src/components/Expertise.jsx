@@ -1,12 +1,18 @@
 import React from "react";
 import { CUSINES } from "../constants";
+import { motion } from "framer-motion";
 
 const Expertise = () => {
     return (
         <section id="expertise">
-            <h2 className=" my-8 text-center text-3xl tracking-tighter lg:text-4xl ">
+            <motion.h2
+                initial={{ opacity: 0, x: -400 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.5, delay: 0.3 }}
+                className=" my-8 will-change-transform text-center text-3xl tracking-tighter lg:text-4xl "
+            >
                 Expertise
-            </h2>
+            </motion.h2>
             <div className="container mx-auto  px-4 ">
                 {CUSINES.map((cuisine, index) => {
                     return (

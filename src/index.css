@@ -8,3 +8,8 @@
   font-family: "Open Sans", sans-serif ;
   background-color: black;
 }
+
+body{
+overflow-x: hidden;  
+  scroll-behavior: smooth;
+}
